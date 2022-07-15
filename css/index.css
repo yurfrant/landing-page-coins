@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     padding: 0;
@@ -7,7 +8,13 @@
 }
 
 :root {
---logonav_logo-text-font: Ubuntu, sans-serif;    
+--site-titles-font: Ubuntu, sans-serif;  
+--site-text-font: Inter, sans-serif; 
+--site-text-color: #264653;
+--site-text-color-highlight: #e76f51;
+--background-color-header: #2a9d8f;
+--background-color-rest: #e9c46a;
+--background-color-main: #fefae0;
 }
 
 a {
@@ -15,10 +22,25 @@ a {
     color: inherit;
 }
 
+h2, h3, .pricing_card_title {
+    font-family: var(--site-titles-font);
+    color: var(--site-text-color);
+
+
+}
+
+
+p, .pricing_card_text, .pricing_card_price {
+    font-family: var(--site-text-font);
+
+
+}
+
 .logonav {
     display: flex;
     align-items:center;
     justify-content: space-between;
+    background-color: var(--background-color-rest);
 }
 
 .logonav_logo {
@@ -26,24 +48,21 @@ a {
     align-items: center;
     min-width: 150px;
     width: 40%;
+    
 }
 
 .logonav_logo-pic {
     width: 100px;
     height: 100px;
-    margin: 0 30px 0 30px;
+    margin: 5px 30px 5px 30px;
 }
 
 .logonav_logo-text {
-    font-family: var(--logonav_logo-text-font);
+    font-family: var(--site-titles-font);
     font-size: 60px;
     margin: 0 30px 0 30px;
 }
 
-.logonav_nav {
-
-
-}
 
 /*media hear*/
 
@@ -59,14 +78,20 @@ a {
     list-style: none;
 }
 
+.logonav_nav_item-link {
+    font-family: var(--site-titles-font);
+    font-size: 18px;
+
+}
+
 .signup {
     display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
-height: 100px;
-margin-top: 10px;
+
+margin: 40px 0 5px 0;
 
 }
 
@@ -74,10 +99,97 @@ margin-top: 10px;
     display: flex;
 flex-direction: column;
 
+
+}
+
+#signup_mail {
+    width: 200px;
+    height: 30px;
+    margin: 10px 0 5px 0;
+
+}
+
+#signup_submit {
+    width: 200px;
+    height: 30px;
+    margin: 5px 0 5px 0;
+
+
+}
+
+.advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    margin: 40px 0 5px 0;
+
+
+}
+
+
+.advantages_list {
+    display: flex;
+    align-items: center;
+}
+
+.advantages_list_box {
+    margin: 0 30px 0 30px;
+}
+
+.advantages_list_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 30px 0 30px;
+
+}
+
+
+.how_video {
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+margin: 40px 0 5px 0;
+
+}
+
+.how_video_title {
+    margin: 0 0 5px 0;
+}
+
+.how_video_vid {
+    margin: 10px 0 5px 0;
+
+
 }
 
 .pricing_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
         
+
+}
+
+.pricing {
+    margin: 40px 0 5px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-gap: 20px;
+
+       
+
+
+}
+
+.pricing_card_title {
+font-size: 22px;
 
 }
 
@@ -85,19 +197,21 @@ flex-direction: column;
     background-image: url(../img/card_car.png);
         background-size: cover;
         background-repeat: no-repeat;
-        width: 35%;
-        height: 200px;
+        width: 370px;
+        height: 370px;
         align-self: center;
         justify-self: center;
         background-position: 50% 50%;
 }
 
+
+
 .pic_fridge {
     background-image: url(../img/card_fridge.png);
         background-size: cover;
         background-repeat: no-repeat;
-        width: 35%;
-        height: 200px;
+        width: 370px;
+        height: 370px;
         align-self: center;
         justify-self: center;
         background-position: 50% 50%;
@@ -107,8 +221,8 @@ flex-direction: column;
     background-image: url(../img/card_phone.png);
         background-size: cover;
         background-repeat: no-repeat;
-        width: 35%;
-        height: 200px;
+        width: 370px;
+        height: 370px;
         align-self: center;
         justify-self: center;
         background-position: 50% 50%;
@@ -118,9 +232,15 @@ flex-direction: column;
     background-image: url(../img/card_washing-machine.png);
         background-size: cover;
         background-repeat: no-repeat;
-        width: 35%;
-        height: 200px;
+        width: 370px;
+        height: 370px;
         align-self: center;
         justify-self: center;
         background-position: 50% 50%;
+}
+
+
+
+footer {
+    background-color: var(--background-color-rest); 
 }
