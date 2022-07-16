@@ -20,6 +20,7 @@
 a {
     text-decoration: none;
     color: inherit;
+    
 }
 
 h2, h3, .pricing_card_title {
@@ -30,7 +31,7 @@ h2, h3, .pricing_card_title {
 }
 
 
-p, .pricing_card_text, .pricing_card_price {
+p, .pricing_card_text, .pricing_card_price, .credentials_links-link {
     font-family: var(--site-text-font);
 
 
@@ -91,7 +92,7 @@ align-items: center;
 justify-content: center;
 text-align: center;
 
-margin: 40px 0 5px 0;
+margin: 50px 0 0 0;
 
 }
 
@@ -104,15 +105,20 @@ flex-direction: column;
 
 #signup_mail {
     width: 200px;
-    height: 30px;
-    margin: 10px 0 5px 0;
+    height: 40px;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+    margin: 10px 0 0 0;
 
 }
 
 #signup_submit {
     width: 200px;
-    height: 30px;
-    margin: 5px 0 5px 0;
+    height: 40px;
+    margin: 10px 0 0 0;
+    border-radius: 0;
+    border-style: none;
 
 
 }
@@ -123,7 +129,7 @@ flex-direction: column;
     align-items: center;
     
 
-    margin: 40px 0 5px 0;
+    margin: 50px 0 0 0;
 
 
 }
@@ -154,31 +160,38 @@ align-items: center;
 justify-content: center;
 text-align: center;
 
-margin: 40px 0 5px 0;
+margin: 50px 0 0 0;
 
 }
 
 .how_video_title {
-    margin: 0 0 5px 0;
+    margin: 10px 0 0 0;
 }
 
 .how_video_vid {
-    margin: 10px 0 5px 0;
+    margin: 10px 0 0 0;
 
 
 }
 
-.pricing_card {
+.prices {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  
-        
+    
+ 
+   
+}
+
+.prices_title {
+    margin: 50px 0 0 0;
+align-self: center;
 
 }
 
 .pricing {
-    margin: 40px 0 5px 0;
+ 
+    margin: 10px 0 0 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     grid-gap: 20px;
@@ -188,59 +201,117 @@ margin: 40px 0 5px 0;
 
 }
 
-.pricing_card_title {
-font-size: 22px;
-
-}
-
 .pic_car {
     background-image: url(../img/card_car.png);
-        background-size: cover;
+        background-size: 70%;
         background-repeat: no-repeat;
         width: 370px;
         height: 370px;
         align-self: center;
         justify-self: center;
-        background-position: 50% 50%;
+        background-color: #e9c46a;
+        background-position: 100% 80%;
 }
 
 
 
 .pic_fridge {
     background-image: url(../img/card_fridge.png);
-        background-size: cover;
+    background-size: 70%;
         background-repeat: no-repeat;
         width: 370px;
         height: 370px;
         align-self: center;
         justify-self: center;
-        background-position: 50% 50%;
+        background-color: #e9c46a;
+        background-position: 110% 35%;
 }
 
 .pic_phone {
     background-image: url(../img/card_phone.png);
-        background-size: cover;
+    background-size: 70%;
         background-repeat: no-repeat;
         width: 370px;
         height: 370px;
         align-self: center;
         justify-self: center;
-        background-position: 50% 50%;
+        background-color: #e9c46a;
+        background-position: 100% 40%;
 }
 
 .pic_washing-machine {
     background-image: url(../img/card_washing-machine.png);
-        background-size: cover;
+    background-size: 70%;
         background-repeat: no-repeat;
         width: 370px;
         height: 370px;
         align-self: center;
         justify-self: center;
-        background-position: 50% 50%;
+        background-color: #e9c46a;
+        background-position: 110% 50%;
+}
+
+
+.pricing_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--background-color-rest);
+  
+        
+
 }
 
 
 
+.pricing_card_title {
+font-size: 24px;
+margin-left: 20px;
+background-color: #e9c46a;
+
+}
+
+.pricing_card_price {
+ margin-left: 20px;
+ font-size: 20px;
+
+}
+
+.pricing_card_text {
+    margin-left: 20px;
+    
+
+
+}
+
+
+.pricing_card_btn {
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 0;
+    border-style: none;
+}
+
 footer {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
     background-color: var(--background-color-rest); 
+    min-height: 60px;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.credentials_links-link {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.credentials_text {
+    font-size: 14px;
+    margin-right: 10px;
 }
