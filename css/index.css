@@ -8,22 +8,24 @@
 }
 
 :root {
---site-titles-font: Ubuntu, sans-serif;  
---site-text-font: Inter, sans-serif; 
---site-text-color: #264653;
---site-text-color-highlight: #e76f51;
---background-color-header: #2a9d8f;
---background-color-rest: #e9c46a;
---background-color-main: #fefae0;
+    --site-titles-font: Ubuntu, sans-serif;
+    --site-text-font: Inter, sans-serif;
+    --site-text-color: #264653;
+    --site-text-color-highlight: #e76f51;
+    --background-color-header: #2a9d8f;
+    --background-color-rest: #e9c46a;
+    --background-color-main: #fefae0;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    
+
 }
 
-h2, h3, .pricing_card_title {
+h2,
+h3,
+.pricing_card_title {
     font-family: var(--site-titles-font);
     color: var(--site-text-color);
 
@@ -31,25 +33,50 @@ h2, h3, .pricing_card_title {
 }
 
 
-p, .pricing_card_text, .pricing_card_price, .credentials_links-link {
+p,
+.pricing_card_text,
+.pricing_card_price,
+.credentials_links-link {
     font-family: var(--site-text-font);
 
 
 }
 
+
+
 .logonav {
+
     display: flex;
-    align-items:center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: left;
+    min-width: 370px;
+    justify-content: center;
     background-color: var(--background-color-rest);
+
 }
+
+
+
+@media (min-width: 930px) {
+    .logonav {
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .logonav {
+        flex-direction: row;
+    }
+}
+
+
+
 
 .logonav_logo {
     display: flex;
     align-items: center;
-    min-width: 150px;
     width: 40%;
-    
+
 }
 
 .logonav_logo-pic {
@@ -60,19 +87,39 @@ p, .pricing_card_text, .pricing_card_price, .credentials_links-link {
 
 .logonav_logo-text {
     font-family: var(--site-titles-font);
+
+
     font-size: 60px;
     margin: 0 30px 0 30px;
 }
 
+.logonav_nav {
+    min-height: 110px;
 
-/*media hear*/
+}
 
 .logonav_nav_items {
-    display: flex;
-    align-items: flex-end;
 
-    
+    min-height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+@media (min-width: 930px) {
+
+    .logonav_nav_items {
+
+        flex-direction: row;
+
+        align-items: center;
+
+    }
+}
+
+
+
+
 
 .logonav_nav_item {
     margin: 0 15px 0 15px;
@@ -87,18 +134,18 @@ p, .pricing_card_text, .pricing_card_price, .credentials_links-link {
 
 .signup {
     display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-margin: 50px 0 0 0;
+    margin: 50px 0 0 0;
 
 }
 
 #signup_form {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
 
 
 }
@@ -127,7 +174,7 @@ flex-direction: column;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 
     margin: 50px 0 0 0;
 
@@ -155,12 +202,12 @@ flex-direction: column;
 
 .how_video {
     display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-margin: 50px 0 0 0;
+    margin: 50px 0 0 0;
 
 }
 
@@ -178,39 +225,39 @@ margin: 50px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
- 
-   
+
+
+
 }
 
 .prices_title {
     margin: 50px 0 0 0;
-align-self: center;
+    align-self: center;
 
 }
 
 .pricing {
- 
+
     margin: 10px 0 0 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     grid-gap: 20px;
 
-       
+
 
 
 }
 
 .pic_car {
     background-image: url(../img/card_car.png);
-        background-size: 70%;
-        background-repeat: no-repeat;
-        width: 370px;
-        height: 370px;
-        align-self: center;
-        justify-self: center;
-        background-color: #e9c46a;
-        background-position: 100% 80%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 370px;
+    align-self: center;
+    justify-self: center;
+    background-color: #e9c46a;
+    background-position: 100% 80%;
 }
 
 
@@ -218,37 +265,37 @@ align-self: center;
 .pic_fridge {
     background-image: url(../img/card_fridge.png);
     background-size: 70%;
-        background-repeat: no-repeat;
-        width: 370px;
-        height: 370px;
-        align-self: center;
-        justify-self: center;
-        background-color: #e9c46a;
-        background-position: 110% 35%;
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 370px;
+    align-self: center;
+    justify-self: center;
+    background-color: #e9c46a;
+    background-position: 110% 35%;
 }
 
 .pic_phone {
     background-image: url(../img/card_phone.png);
     background-size: 70%;
-        background-repeat: no-repeat;
-        width: 370px;
-        height: 370px;
-        align-self: center;
-        justify-self: center;
-        background-color: #e9c46a;
-        background-position: 100% 40%;
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 370px;
+    align-self: center;
+    justify-self: center;
+    background-color: #e9c46a;
+    background-position: 100% 40%;
 }
 
 .pic_washing-machine {
     background-image: url(../img/card_washing-machine.png);
     background-size: 70%;
-        background-repeat: no-repeat;
-        width: 370px;
-        height: 370px;
-        align-self: center;
-        justify-self: center;
-        background-color: #e9c46a;
-        background-position: 110% 50%;
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 370px;
+    align-self: center;
+    justify-self: center;
+    background-color: #e9c46a;
+    background-position: 110% 50%;
 }
 
 
@@ -256,33 +303,33 @@ align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-  
+
     border-style: solid;
     border-width: 1px;
     border-color: var(--background-color-rest);
-  
-        
+
+
 
 }
 
 
 
 .pricing_card_title {
-font-size: 24px;
-margin-left: 20px;
-background-color: #e9c46a;
+    font-size: 24px;
+    margin-left: 20px;
+    background-color: #e9c46a;
 
 }
 
 .pricing_card_price {
- margin-left: 20px;
- font-size: 20px;
+    margin-left: 20px;
+    font-size: 20px;
 
 }
 
 .pricing_card_text {
     margin-left: 20px;
-    
+
 
 
 }
@@ -300,7 +347,7 @@ footer {
     margin: 50px 0 0 0;
     display: flex;
     flex-direction: column;
-    background-color: var(--background-color-rest); 
+    background-color: var(--background-color-rest);
     min-height: 60px;
     align-items: flex-end;
     justify-content: space-around;
