@@ -114,7 +114,13 @@ p,
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 160px 0 0 0;
+    margin: 270px 0 0 0;
+}
+
+@media (min-width: 930px) {
+    .signup {
+        margin: 160px 0 0 0;
+    }
 }
 
 #form {
