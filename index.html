@@ -8,41 +8,42 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
+
+    <header id="header">
         <div class="logonav">
             <div class="logonav_logo">
-                <img class="logonav_logo-pic" src="img/logo_wrench.png" alt="wrench on the logo">
+                <img id="header-img" class="logonav_logo-pic" src="img/logo_wrench.png" alt="wrench on the logo">
                 <p class="logonav_logo-text">Repairer</p>
             </div>
-            <nav class="logonav_nav">
+            <nav id="nav-bar" class="logonav_nav">
                 <ul class="logonav_nav_items">
                     <li class="logonav_nav_item">
-                        <a class="logonav_nav_item-link" href="#advantages">Our advantages</a>
+                        <a class="logonav_nav_item-link nav-link" href="#advantages">Our advantages</a>
                     </li>
                     <li class="logonav_nav_item">
-                        <a class="logonav_nav_item-link" href="#howwerepair">How we repair</a>
+                        <a class="logonav_nav_item-link nav-link" href="#howwerepair">How we repair</a>
                     </li>
                     <li class="logonav_nav_item">
-                        <a class="logonav_nav_item-link" href="#pricing">Pricing</a>
+                        <a class="logonav_nav_item-link nav-link" href="#pricing">Pricing</a>
                     </li>
                 </ul>
             </nav>
-
         </div>
+    </header>
 
-    </header class="header">
     <section class="signup">
         <h2 class="signup_title">Just now receive 20% discount</h2>
-        <form id="signup_form" action="#">
-            <input id="signup_mail" type="email" name="email" placeholder="Enter your email address" required="">
-            <input id="signup_submit" class="signup_btn" type="submit" value="Sign Up">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+            <input id="email" type="email" name="email" placeholder="Enter your email address" required="">
+            <input id="submit" class="signup_btn" type="submit" value="Sign Up">
         </form>
     </section>
-    <section class="advantages">
+
+    <section id="advantages" class="advantages">
         <h2 class="advantages_title">
             Our advantages. Why you should choose us.
         </h2>
@@ -82,60 +83,52 @@
             </div>
         </div>
     </section>
-    <section class="how_video">
+
+    <section id="howwerepair" class="how_video">
         <h2 class="how_video_title">Check our work</h2>
-        <iframe class="how_video_vid" width="560" height="315" src="https://www.youtube.com/embed/p9hA59nn7uQ"
-            title="YouTube video player" frameborder="0"
+        <iframe id="video" class="how_video_vid" width="560" height="315"
+            src="https://www.youtube.com/embed/p9hA59nn7uQ" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </section>
 
-
-
-    <section class="prices">
+    <section id="pricing" class="prices">
         <h2 class="prices_title">Choose your service</h2>
         <div class="pricing">
-
             <div class="pricing_card pic_car">
                 <div class="pricing_card_title">Car repair</div>
                 <div class="pricing_card_price">from 100$</div>
                 <button class="pricing_card_btn btn">Select</button>
                 <div class="pricing_card_text">Lorem ipsum.Lorem ipsum.Lorem ipsum dolor.Lorem ipsum.</div>
-
             </div>
             <div class="pricing_card pic_fridge">
                 <div class="pricing_card_title">Fridge repair</div>
                 <div class="pricing_card_price">from 2500$</div>
                 <button class="pricing_card_btn btn">Select</button>
                 <div class="pricing_card_text">Lorem ipsum.Lorem ipsum.Lorem ipsum dolor.Lorem ipsum.</div>
-
             </div>
             <div class="pricing_card pic_phone">
                 <div class="pricing_card_title">Phone repair</div>
                 <div class="pricing_card_price">from 2500$</div>
                 <button class="pricing_card_btn btn">Select</button>
                 <div class="pricing_card_text">Lorem ipsum.Lorem ipsum.Lorem ipsum dolor.Lorem ipsum.</div>
-
             </div>
             <div class="pricing_card pic_washing-machine">
                 <div class="pricing_card_title">Washing machine repair</div>
                 <div class="pricing_card_price">from 2500$</div>
                 <button class="pricing_card_btn" class="btn">Select</button>
                 <div class="pricing_card_text">Lorem ipsum.Lorem ipsum.Lorem ipsum dolor.Lorem ipsum.</div>
-
             </div>
         </div>
     </section>
+
     <footer class="credentials">
         <div class="credentials_links">
             <a class="credentials_links-link" href="#privacy">Privacy</a>
             <a class="credentials_links-link" href="#terms">Terms</a>
             <a class="credentials_links-link" href="#contact">Contact</a>
         </div>
-
         <p class="credentials_text">Copyright 2022, Repairer</p>
-
-
     </footer>
 
 </body>
